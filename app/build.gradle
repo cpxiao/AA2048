@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+//apply plugin: 'com.jakewharton.hugo'
+//apply plugin: 'com.antfortune.freeline'
 
 android {
     compileSdkVersion 25
@@ -7,9 +9,10 @@ android {
         applicationId "com.cpxiao.aa2048"
         minSdkVersion 14
         targetSdkVersion 25
-        versionCode 108
-        versionName "1.0.8"
+        versionCode 109
+        versionName "1.0.9"
     }
+
     buildTypes {
         release {
             minifyEnabled true  //混淆
@@ -17,6 +20,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
     productFlavors {
         gp {}
     }
@@ -59,7 +63,7 @@ android {
 }
 
 dependencies {
-    compile project(':AndroidUtils:library')
+    compile project(':__AndroidUtils:library')
     compile 'com.android.support:appcompat-v7:25.3.1'
     /**
      * Ads Start
