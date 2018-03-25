@@ -30,6 +30,7 @@ android {
         flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
     }
 
+
 //    freeline {
 //        hack true
 //        productFlavor 'debug_gp'
